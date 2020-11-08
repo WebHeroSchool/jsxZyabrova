@@ -1,6 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
 
+const name = 'Olga';
+
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +20,32 @@ function App() {
         >
           Learn React with WHS
         </a>
+        <p style={{
+          color:'red'
+        }}>
+          Zyabrova Olga
+        </p>
+        <p>
+          {name}
+        </p>
+        <p>
+          {23}
+        </p>
+        <p>
+          {23-1}
+        </p>
+        <p>
+          {name && 'Name is true'}
+        </p>
+        <p>
+          {name ? 'Name is true' : 'Olga is false'}
+        </p>
+        <p>
+          {undefined}
+          {null}
+          {false}
+          {true}
+        </p>
       </header>
     </div>
   );
