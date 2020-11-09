@@ -1,7 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
+import * as nums from './numbers.js';
 
 const name = 'Olga';
+const newNumber = nums.count * nums.length;
 
 
 function App() {
@@ -20,6 +22,9 @@ function App() {
         >
           Learn React with WHS
         </a>
+        <p>
+          {newNumber}
+        </p>
         <p style={{
           color:'red'
         }}>
