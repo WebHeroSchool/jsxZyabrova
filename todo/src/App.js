@@ -1,5 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
+import * as nums from './numbers.js';
+
+const name = 'Olga';
+const newNumber = nums.count * nums.length;
+
 
 function App() {
   return (
@@ -17,6 +22,35 @@ function App() {
         >
           Learn React with WHS
         </a>
+        <p>
+          {newNumber}
+        </p>
+        <p style={{
+          color:'red'
+        }}>
+          Zyabrova Olga
+        </p>
+        <p>
+          {name}
+        </p>
+        <p>
+          {23}
+        </p>
+        <p>
+          {23-1}
+        </p>
+        <p>
+          {name && 'Name is true'}
+        </p>
+        <p>
+          {name ? 'Name is true' : 'Olga is false'}
+        </p>
+        <p>
+          {undefined}
+          {null}
+          {false}
+          {true}
+        </p>
       </header>
     </div>
   );
